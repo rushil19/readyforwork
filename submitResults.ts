@@ -1,8 +1,15 @@
-// Add 'export' at the beginning!
-export const submitResults = async (formData: any) => { 
-  const response = await fetch("https://script.google.com/macros/s/AKfycbzyn5hGk8VFeTwgbwikqkNssZPBJiOarbtCllduV7GhW2yz67ebsd2tXf6v6qVOeYQIHQ/exec", {
-    method: "POST",
+export const submitResults = async (formData: any) => {
+  // We convert your data into a URL-friendly string
+  const queryString = new URLSearchParams({
+    data: JSON.stringify(formData)
+  }).toString();
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyfppUPlkq3wiast2fF99Q4lDRADWHUhs5wZcQmAm-Uyns6G6hH-Yx-Rqm0oGHncs9lBQ/exec";
+
+  // We attach the data directly to the URL after a '?'
+  await fetch(`${scriptURL}?${queryString}`, {
+    method: "GET", // Changing to GET is often more stable for simple data
     mode: "no-cors",
-    // ... the rest of your code ...
+    cache: "no-cache"
   });
 };
