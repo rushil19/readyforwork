@@ -1,4 +1,4 @@
-const response = await fetch(https://script.google.com/macros/s/AKfycbwNQayBQx873tLzNDUhgG9XDO6pSGzHnSiyLvS0byEgGntlhZ0SM1JMC3dgQh9jiApWQg/exec, {
+const response = await fetch("https://script.google.com/macros/s/AKfycbwNQayBQx873tLzNDUhgG9XDO6pSGzHnSiyLvS0byEgGntlhZ0SM1JMC3dgQh9jiApWQg/exec", {
   method: "POST",
   mode: "no-cors", // Crucial: Tells the browser not to wait for a CORS header
   cache: "no-cache",
