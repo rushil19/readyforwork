@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbx1NjSDa0VHQAMbEHS1rUmtBeABLhQxt9SpX0Z7ihxEsToWPKx-RnZyq0HHT_4NuJw7YQ/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzzdbfMz9fe6B0_UbvYZa6_mv1i8LUo-jrBaMgwRR6KZ1sc70MNgRzwiul3FS6sELjRdQ/exec";
 
 export async function submitResults(data: any) {
   try {
