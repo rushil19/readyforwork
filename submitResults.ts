@@ -4,7 +4,7 @@ export const submitResults = async (formData: any) => {
     data: JSON.stringify(formData)
   }).toString();
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyfppUPlkq3wiast2fF99Q4lDRADWHUhs5wZcQmAm-Uyns6G6hH-Yx-Rqm0oGHncs9lBQ/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxHqOLC3KsnWRcH06xOwGzXfL--R_PUbLWWmtvN-nI1JxMMVgaDrTY9vUuNfCkWUoxTng/exec";
 
   // We attach the data directly to the URL after a '?'
   await fetch(`${scriptURL}?${queryString}`, {
